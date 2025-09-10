@@ -1,0 +1,12 @@
+main
+
+-commit 1 
+-commit 2
+-commit 3 -->head
+     --feather branch
+        -commit 4
+-commit 6               -->head     
+        -commit 5 (complete)
+
+
+
