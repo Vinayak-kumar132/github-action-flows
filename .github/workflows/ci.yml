@@ -1,11 +1,11 @@
-name: Frontend Build
+name: Frontend CI
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Run tests
+        run: npm test
